@@ -3,9 +3,10 @@
 #安装rpm包
 ntpdate cn.pool.ntp.org
 
-chmod +x /usr/local/src/teamviewer/teamviewer_12.0.76279.i686.rpm
-cd /usr/local/src/teamviewer
-yum -y install teamviewer_12.0.76279.i686.rpm
+wget https://download.teamviewer.com/download/version_12x/teamviewer.i686.rpm
+#chmod +x /usr/local/src/teamviewer/teamviewer_12.0.137452.i686.rpm
+#cd /usr/local/src/teamviewer
+yum -y install teamviewer_12.0.137452.i686.rpm
 sleep 3s
 
 #停止服务
@@ -31,9 +32,3 @@ sleep 8s
 teamviewer info
 
 echo 'teamviewer daemon start' >> /etc/rc.local 
-
-
-
-
-
-
